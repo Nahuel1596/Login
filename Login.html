@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login</title>
+        <meta name="description" content="Login para test automatico"/>
+        <meta name="author" content="EVS Grupo 16">
+        <script src="LoginJS.js"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Login</h1>
+            <form>
+                <!-- Nombre de usuario -->
+                <label for="UsuarioLabel">Username:</label>
+                <input type="text" id="usuario">
+                <br>
+                <!-- Contraseña -->
+                <label for="passwordLabel">Password:</label>
+                <input type="text" id="contrasenia">
+                <br>
+                <p><a href="#" id="OlvidoPass" onclick="RecuperarPass()">Forgot your password?</a>
+                <div id="lower">
+                    <!-- Boton de Login -->
+                    <input type="button" value="Login" onclick="Alertar()">
+                </div>
+            </form>       
+        </div>
+    </body>
