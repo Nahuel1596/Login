@@ -29,7 +29,7 @@ function Alertar()
             {
                 alert("Usuario o contraseña invalido")
             }
-            if(usuario=="joan12")                     //usuario para bloquear
+            else if(usuario=="joan12")                     //usuario para bloquear
             {
                 contIntentos-=1;
                 alert(contIntentos+" intentos disponibles")
@@ -42,12 +42,14 @@ function Alertar()
         else
         {
             alert("Usuario o contraseña invalido");
+            contIntentos-=1;
+            alert(contIntentos+" intentos disponibles")
         }
     }
     else
     {
         alert("Usuario o contraseña invalido");
-        alert("usuario bloqueado");
+        alert("usuario bloqueado... comuniquese con la clinica");
     }
     
 }
